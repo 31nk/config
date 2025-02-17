@@ -23,3 +23,12 @@ nvim/**
 waybar/**
 swaync/**
 wofi/**
+
+# explicitly un-ignore files inside the allowed directories
+!ghostty/**
+!foot/**
+!hypr/**
+!nvim/**
+!waybar/**
+!swaync/**
+!wofi/**
