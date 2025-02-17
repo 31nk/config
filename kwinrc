@@ -1,0 +1,16 @@
+[Desktops]
+Id_1=0219b157-c64c-4e69-a3a7-310c2940b042
+Number=1
+Rows=1
+
+[Tiling]
+padding=4
+
+[Tiling][6f6c3697-0d64-5ee4-a808-aba08f7c264f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][8812b0db-847b-5787-a7f2-5f39dc01a9bc]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Xwayland]
+Scale=1
