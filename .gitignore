@@ -1,0 +1,25 @@
+# ignore
+*
+# do not ignore
+
+!.gitignore
+
+# do not ignore
+
+!ghostty/
+!foot/
+!hypr/
+!nvim/
+!waybar/
+!swaync/
+!wofi/
+
+# allow tracking
+
+ghostty/**
+foot/**
+hypr/**
+nvim/**
+waybar/**
+swaync/**
+wofi/**
