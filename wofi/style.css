@@ -1,11 +1,11 @@
 /* The name of the window itself */
 #window {
-  background-color: rgba(16, 16, 16, 0.8); /* using #101010 with 0.8 opacity */
+  background-color: #1E201E; /* Solid base color */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
               0 4px 6px -4px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   font-size: 1.2rem;
-  border: 2px solid @border-col; /* Border around the whole window (using #FFC799) */
+  border: 2px solid #5C7285; /* Accent border */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,37 +14,36 @@
 /* The name of the box that contains everything */
 #window #outer-box {
   width: 100%;
-  /* No additional styling needed here unless desired */
 }
 
 /* The search bar (input container) */
 #window #outer-box #input {
-  background-color: rgba(16, 16, 16, 0.8); /* using our base color */
-  color: #FFFFFF;                          /* primary foreground */
-  border: 2px solid #90B99F;                /* Border for the search bar using a different color */
+  background-color: #1E201E;
+  color: #ECDFCC;  /* Primary foreground */
+  border: 2px solid #A7B49E;  /* Distinct border */
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
-  border-radius: 1rem 1rem 0 0;              /* Rounded top corners, square bottom */
-  margin: 1rem auto;                        /* Center the search bar horizontally */
-  width: calc(100% - 2rem);                 /* Adjust width relative to the window, with some margin */
+  border-radius: 1rem 1rem 0 0;
+  margin: 1rem auto;
+  width: calc(100% - 2rem);
 }
 
 #window #outer-box #input:focus,
 #window #outer-box #input:focus-visible,
 #window #outer-box #input:active {
-  border: 2px solid #90B99F;
+  border: 2px solid #A7B49E;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
 /* The container holding all the entries (apps container) */
 #window #outer-box #scroll {
-  margin: 10px auto 0;              /* Center horizontally */
-  padding: 20px;                    /* Increased padding to enlarge the container */
-  background-color: rgba(16, 16, 16, 0.8);
-  width: calc(100% - 2rem);           /* Maintain the width relative to the window */
-  box-sizing: border-box;           /* Include padding in width calculation */
-  border-radius: 1rem;              /* Rounded corners for the container */
+  margin: 10px auto 0;
+  padding: 20px;
+  background-color: #1E201E;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+  border-radius: 1rem;
 }
 
 /* The container for all entries (and any expanded sub-actions) */
@@ -54,10 +53,9 @@
 
 /* Each entry in the list */
 #window #outer-box #scroll #inner-box #entry {
-  color: #FFFFFF; /* white text */
-  background-color: rgba(16, 16, 16, 0.1); /* a very light transparent version of our base */
+  color: #ECDFCC; /* Primary text color */
+  background-color: #3C3D37; /* A subtle, solid contrast from the base */
   padding: 0.6rem 1rem;
-  /* No individual border */
 }
 
 /* Images inside entries (if using image mode) */
@@ -68,8 +66,92 @@
 
 /* Selected entry styling */
 #window #outer-box #scroll #inner-box #entry:selected {
-  color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.1); /* translucent white for contrast */
+  color: #ECDFCC;
+  background-color: #697565; /* Solid highlight for selection */
   outline: none;
+}
+
+/* Tooltip */
+tooltip {
+  background: #1E201E;
+  color: #ECDFCC;
+}
+
+/* --- Module Text and Background --- */
+
+/* Custom Notification */
+#custom-notification {
+  padding: 2px 4px;
+  color: #ECDFCC;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 20px;
+}
+
+/* Clock Module */
+#clock {
+  padding: 2px 4px;
+  color: #A7B49E; /* Initial text color */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 20px;
+}
+#clock:hover {
+  color: #E2E0C8; /* Hover text color */
+}
+
+/* CPU Module */
+#cpu {
+  padding: 2px 4px;
+  color: #5C7285; /* Initial text color */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 20px;
+}
+#cpu:hover {
+  color: #697565; /* Hover text color */
+}
+
+/* Wireplumber Module */
+#wireplumber {
+  padding: 2px 4px;
+  color: #818C78; /* Initial text color */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 20px;
+}
+#wireplumber:hover {
+  color: #ECDFCC; /* Hover text color */
+}
+
+/* MPRIS Module */
+#mpris {
+  padding: 2px 4px;
+  color: #E2E0C8; /* Initial text color */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 20px;
+}
+#mpris:hover {
+  color: #A7B49E; /* Hover text color */
+}
+
+/* --- Workspace Buttons --- */
+#workspaces {
+  padding: 0 3px;
+}
+
+#workspaces button {
+  padding: 2px 4px;
+  margin-right: 0.5px;
+  color: #A7B49E;
+  background: #1E201E;
+  transition: all 0.2s ease;
+  border: none;
 }
 
