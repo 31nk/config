@@ -1,11 +1,11 @@
-# ignore
+# Ignore everything
 *
-# do not ignore
 
+# Do not ignore these specific files
 !.gitignore
+!starship.toml
 
-# do not ignore
-
+# Do not ignore these directories
 !ghostty/
 !foot/
 !hypr/
@@ -14,8 +14,7 @@
 !swaync/
 !wofi/
 
-# allow tracking
-
+# Allow tracking everything inside these directories
 ghostty/**
 foot/**
 hypr/**
@@ -24,7 +23,7 @@ waybar/**
 swaync/**
 wofi/**
 
-# explicitly un-ignore files inside the allowed directories
+# Explicitly un-ignore files inside the allowed directories (redundant)
 !ghostty/**
 !foot/**
 !hypr/**
@@ -32,3 +31,4 @@ wofi/**
 !waybar/**
 !swaync/**
 !wofi/**
+
