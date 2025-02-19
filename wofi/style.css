@@ -1,11 +1,11 @@
 /* The name of the window itself */
 #window {
-  background-color: #1E201E; /* Solid base color */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+  background-color: #161617; /* Dark background */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
               0 4px 6px -4px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   font-size: 1.2rem;
-  border: 2px solid #5C7285; /* Accent border */
+  border: 2px solid #90B99F; /* Accent border */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +18,9 @@
 
 /* The search bar (input container) */
 #window #outer-box #input {
-  background-color: #1E201E;
-  color: #ECDFCC;  /* Primary foreground */
-  border: 2px solid #A7B49E;  /* Distinct border */
+  background-color: #161617; /* Dark background */
+  color: #C9C7CD;  /* Light text for readability */
+  border: 2px solid #90B99F; /* Accent border */
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   border-radius: 1rem 1rem 0 0;
@@ -31,7 +31,7 @@
 #window #outer-box #input:focus,
 #window #outer-box #input:focus-visible,
 #window #outer-box #input:active {
-  border: 2px solid #A7B49E;
+  border: 2px solid #90B99F;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -40,7 +40,7 @@
 #window #outer-box #scroll {
   margin: 10px auto 0;
   padding: 20px;
-  background-color: #1E201E;
+  background-color: #161617; /* Dark background */
   width: calc(100% - 2rem);
   box-sizing: border-box;
   border-radius: 1rem;
@@ -53,8 +53,8 @@
 
 /* Each entry in the list */
 #window #outer-box #scroll #inner-box #entry {
-  color: #ECDFCC; /* Primary text color */
-  background-color: #3C3D37; /* A subtle, solid contrast from the base */
+  color: #C9C7CD; /* Light text */
+  background-color: #161617; /* Dark background */
   padding: 0.6rem 1rem;
 }
 
@@ -66,15 +66,15 @@
 
 /* Selected entry styling */
 #window #outer-box #scroll #inner-box #entry:selected {
-  color: #ECDFCC;
-  background-color: #697565; /* Solid highlight for selection */
+  color: #C9C7CD;
+  background-color: #90B99F; /* Selection highlight */
   outline: none;
 }
 
 /* Tooltip */
 tooltip {
-  background: #1E201E;
-  color: #ECDFCC;
+  background: #161617; /* Dark background */
+  color: #C9C7CD; /* Light text */
 }
 
 /* --- Module Text and Background --- */
@@ -82,8 +82,8 @@ tooltip {
 /* Custom Notification */
 #custom-notification {
   padding: 2px 4px;
-  color: #ECDFCC;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  color: #C9C7CD; /* Light text */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90% 20px;
@@ -92,53 +92,53 @@ tooltip {
 /* Clock Module */
 #clock {
   padding: 2px 4px;
-  color: #A7B49E; /* Initial text color */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  color: #C9C7CD; /* Light text */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90% 20px;
 }
 #clock:hover {
-  color: #E2E0C8; /* Hover text color */
+  color: #90B99F; /* Hover text color */
 }
 
 /* CPU Module */
 #cpu {
   padding: 2px 4px;
-  color: #5C7285; /* Initial text color */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  color: #C9C7CD; /* Light text */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90% 20px;
 }
 #cpu:hover {
-  color: #697565; /* Hover text color */
+  color: #90B99F; /* Hover text color */
 }
 
 /* Wireplumber Module */
 #wireplumber {
   padding: 2px 4px;
-  color: #818C78; /* Initial text color */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  color: #C9C7CD; /* Light text */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90% 20px;
 }
 #wireplumber:hover {
-  color: #ECDFCC; /* Hover text color */
+  color: #90B99F; /* Hover text color */
 }
 
 /* MPRIS Module */
 #mpris {
   padding: 2px 4px;
-  color: #E2E0C8; /* Initial text color */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%231E201E' stroke='%235C7285' stroke-width='1'/></svg>");
+  color: #C9C7CD; /* Light text */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90% 20px;
 }
 #mpris:hover {
-  color: #A7B49E; /* Hover text color */
+  color: #90B99F; /* Hover text color */
 }
 
 /* --- Workspace Buttons --- */
@@ -149,8 +149,8 @@ tooltip {
 #workspaces button {
   padding: 2px 4px;
   margin-right: 0.5px;
-  color: #A7B49E;
-  background: #1E201E;
+  color: #C9C7CD; /* Light text */
+  background: #161617; /* Dark background */
   transition: all 0.2s ease;
   border: none;
 }
