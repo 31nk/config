@@ -7,11 +7,25 @@
 
 # Do not ignore these directories and their contents
 !ghostty/
-!foot/
-!hypr/
-!nvim/
-!waybar/
-!swaync/
-!wofi/
-!hpanel/
+!ghostty/**
 
+!foot/
+!foot/**
+
+!hypr/
+!hypr/**
+
+!nvim/
+!nvim/**
+
+!waybar/
+!waybar/**
+
+!swaync/
+!swaync/**
+
+!wofi/
+!wofi/**
+
+!hpanel/
+!hpanel/**

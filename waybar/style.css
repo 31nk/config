@@ -1,0 +1,110 @@
+/* Global defaults */
+* {
+    font-size: 15px;
+    font-family: "CodeNewRoman Nerd Font Propo";
+    font-weight: bold;
+}
+
+/* Waybar window background */
+window#waybar {
+    all: unset;
+    background: #161617; /* Darker background */
+    margin: 10px;
+    padding: 0;
+    border-radius: 8px;
+}
+
+/* Module containers (consistent background: Darker Night) */
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 4px 8px;
+    margin: 3px;
+    border-radius: 8px;
+    background: #161617; /* Darker background */
+}
+
+/* Tooltip */
+tooltip {
+    background: #161617; /* Darker background */
+    color: #C9C7CD; /* Updated from Periwinkle */
+}
+
+/* --- Module Text and Background --- */
+
+/* Custom Notification */
+#custom-notification {
+    padding: 2px 4px;
+    color: #90B99F; /* Updated from Periwinkle */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%23E6B99D' stroke-width='1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 20px;
+}
+
+/* Clock Module */
+#clock {
+    padding: 2px 4px;
+    color: #C9C7CD; /* Updated from Periwinkle */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%23E6B99D' stroke-width='1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 20px;
+}
+#clock:hover {
+    color: #92A2D5; /* Updated from Delft Blue */
+}
+
+/* CPU Module */
+#cpu {
+    padding: 2px 4px;
+    color: #E29ECA; /* Updated from African Violet */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%23ACA1CF' stroke-width='1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 20px;
+}
+#cpu:hover {
+    color: #F5A191; /* Updated from Pomp and Power */
+}
+
+/* Wireplumber Module */
+#wireplumber {
+    padding: 2px 4px;
+    color: #ACA1CF; /* Updated from Space Cadet */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%23E29ECA' stroke-width='1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 20px;
+}
+#wireplumber:hover {
+    color: #92A2D5; /* Updated from Delft Blue */
+}
+
+/* MPRIS Module */
+#mpris {
+    padding: 2px 4px;
+    color: #85B5BA; /* Updated from Gunmetal */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%23F5A191' stroke-width='1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 20px;
+}
+#mpris:hover {
+    color: #E6B99D; /* Updated from English Violet */
+}
+
+/* --- Workspace Buttons --- */
+#workspaces {
+    padding: 0 3px;
+}
+
+#workspaces button {
+    padding: 2px 4px;
+    margin-right: 0.5px;
+    color: #C9C7CD; /* Updated from Ghost White */
+    background: #161617; /* Darker background */
+    transition: all 0.2s ease;
+    border: none;
+}
+
