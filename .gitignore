@@ -13,15 +13,5 @@
 !waybar/
 !swaync/
 !wofi/
-!hypr-panel-theme/
-
-# Allow tracking everything inside these directories (if necessary)
-ghostty/**
-foot/**
-hypr/**
-nvim/**
-waybar/**
-swaync/**
-wofi/**
-hypr-panel-theme/**
+!hpanel/
 
