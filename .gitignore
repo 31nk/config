@@ -5,7 +5,7 @@
 !.gitignore
 !starship.toml
 
-# Do not ignore these directories
+# Do not ignore these directories and their contents
 !ghostty/
 !foot/
 !hypr/
@@ -13,8 +13,9 @@
 !waybar/
 !swaync/
 !wofi/
+!hypr-panel-theme/
 
-# Allow tracking everything inside these directories
+# Allow tracking everything inside these directories (if necessary)
 ghostty/**
 foot/**
 hypr/**
@@ -22,13 +23,5 @@ nvim/**
 waybar/**
 swaync/**
 wofi/**
-
-# Explicitly un-ignore files inside the allowed directories (redundant)
-!ghostty/**
-!foot/**
-!hypr/**
-!nvim/**
-!waybar/**
-!swaync/**
-!wofi/**
+hypr-panel-theme/**
 
