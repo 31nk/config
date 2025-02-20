@@ -29,3 +29,6 @@
 
 !hpanel/
 !hpanel/**
+
+!fish/
+!fish/**
