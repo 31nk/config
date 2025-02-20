@@ -14,3 +14,20 @@ end
 set -x TERMINAL foot
 set -x EDITOR nvim
 set -x VISUAL nvim
+
+# define a function to run Commands
+
+#change direcotry to ~/.config
+function cdc
+    cd ~/.config/
+end
+
+#git push orirgin main 
+function gpom
+    git push origin main
+end
+
+#update packages and system
+function update
+    sudo pacman -Syu && yay
+end

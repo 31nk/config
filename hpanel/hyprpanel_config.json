@@ -80,7 +80,6 @@
       "right": [
         "ram",
         "cpu",
-        "cputemp",
         "volume",
         "weather",
         "clock",
@@ -100,7 +99,6 @@
       "right": [
         "ram",
         "cpu",
-        "cputemp",
         "weather",
         "volume",
         "clock",
@@ -120,7 +118,6 @@
       "right": [
         "ram",
         "cpu",
-        "cputemp",
         "weather",
         "volume",
         "clock",
@@ -147,5 +144,10 @@
   "theme.notification.opacity": 90,
   "theme.bar.shadow": "0px 0px 0px 0px #16161e",
   "theme.bar.shadowMargins": "0px 0px 0px 0px",
-  "theme.osd.enable": false
+  "theme.osd.enable": false,
+  "menus.dashboard.stats.interval": 3000,
+  "menus.dashboard.powermenu.confirmation": false,
+  "bar.customModules.ram.leftClick": "foot btop",
+  "bar.customModules.cpu.leftClick": "foot btop",
+  "bar.customModules.ram.pollingInterval": 3000
 }

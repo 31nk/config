@@ -23,7 +23,7 @@ local plugins = {
 	-- Additional plugins
 	{ "tpope/vim-sensible" },
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-	{ "hrsh7th/nvim-cmp" },
+	{ "ms-jpq/coq_nvim" },
 	{ "folke/which-key.nvim" },
 	{ "neovim/nvim-lspconfig" },
 	{ "williamboman/mason.nvim" },
@@ -32,9 +32,16 @@ local plugins = {
 	{ "nvim-neo-tree/neo-tree.nvim" },
 	{ "folke/lazydev.nvim" },
 	{ "nvim-tree/nvim-tree.lua" },
-	{ "junegunn/fzf.vim" },
+	{ "nvim-telescope/telescope.nvim" },
+	{ "nvin-lua/plenary.nvim" },
 	{ "goolord/alpha-nvim" },
 	{ "stevearc/oil.nvim" },
+	{ "cbochs/grapple.nvim" },
+	{ "ThePrimeagen/harpoon" },
+	{ "wurli/visimatch.nvim" },
+	{ "pluffie/neoproj" },
+	{ "catgoose/nvim-colorizer.lua" },
+	{ "Bekaboo/deadcolumn.nvim" },
 
 	-- Custom colorscheme plugin with high priority
 	{
