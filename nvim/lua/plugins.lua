@@ -42,16 +42,6 @@ local plugins = {
 	{ "pluffie/neoproj" },
 	{ "catgoose/nvim-colorizer.lua" },
 	{ "Bekaboo/deadcolumn.nvim" },
-
-	-- Custom colorscheme plugin with high priority
-	{
-		"dgox16/oldworld.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd("colorscheme oldworld")
-		end,
-	},
 }
 
 -- Setup plugins with lazy.nvim
@@ -61,4 +51,5 @@ require("lazy").setup(plugins)
 require("lazyvim.util").on_very_lazy(function()
 	require("user.alpha")
 	require("user.oil")
+	require("user.colors")
 end)

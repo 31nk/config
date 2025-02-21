@@ -1,157 +1,101 @@
-/* The name of the window itself */
-#window {
-  background-color: #161617; /* Dark background */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-              0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  border: 2px solid #90B99F; /* Accent border */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@define-color background  #161617;
+@define-color mauve       #e7cce2;
+@define-color red         #e7cce2;
+@define-color lavender    #faf8d2;
+@define-color text        #faf8d2;
+
+* {
+    all: unset;
+    font-family: 'CodeNewRoman Nerd Font Mono', monospace;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    background-color: transparent;
 }
 
-/* The name of the box that contains everything */
-#window #outer-box {
-  width: 100%;
+window {
+    all: unset;
+    padding: 20px;
+    border-radius: 0px; /* Square corners */
+    background-color: #161617; /* Solid background */
 }
 
-/* The search bar (input container) */
-#window #outer-box #input {
-  background-color: #161617; /* Dark background */
-  color: #C9C7CD;  /* Light text for readability */
-  border: 2px solid #90B99F; /* Accent border */
-  padding: 0.8rem 1rem;
-  font-size: 1.5rem;
-  border-radius: 1rem 1rem 0 0;
-  margin: 1rem auto;
-  width: calc(100% - 2rem);
+#inner-box {
+    margin: 2px;
+    padding: 5px;
+    border: none;
 }
 
-#window #outer-box #input:focus,
-#window #outer-box #input:focus-visible,
-#window #outer-box #input:active {
-  border: 2px solid #90B99F;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+#outer-box {    
+    border: none;
 }
 
-/* The container holding all the entries (apps container) */
-#window #outer-box #scroll {
-  margin: 10px auto 0;
-  padding: 20px;
-  background-color: #161617; /* Dark background */
-  width: calc(100% - 2rem);
-  box-sizing: border-box;
-  border-radius: 1rem;
+#scroll {
+    margin: 0px;
+    padding: 30px;
+    border: none;
+    background-color: #161617; /* Solid background */
 }
 
-/* The container for all entries (and any expanded sub-actions) */
-#window #outer-box #scroll #inner-box {
-  /* No additional styling by default */
+#input {
+    all: unset;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: #faf8d2;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    border-radius: 0px; /* Square corners */
+    background-color: #161617; /* Solid background */
 }
 
-/* Each entry in the list */
-#window #outer-box #scroll #inner-box #entry {
-  color: #C9C7CD; /* Light text */
-  background-color: #161617; /* Dark background */
-  padding: 0.6rem 1rem;
+#input image {
+    border: none;
+    color: #e7cce2;
+    padding-right: 10px;
 }
 
-/* Images inside entries (if using image mode) */
-#window #outer-box #scroll #inner-box #entry #img {
-  width: 1rem;
-  margin-right: 0.5rem;
+#input * {
+    border: none;
+    outline: none;
 }
 
-/* Selected entry styling */
-#window #outer-box #scroll #inner-box #entry:selected {
-  color: #C9C7CD;
-  background-color: #90B99F; /* Selection highlight */
-  outline: none;
+#input:focus {
+    outline: none;
+    border: none;
+    border-radius: 0px;
 }
 
-/* Tooltip */
-tooltip {
-  background: #161617; /* Dark background */
-  color: #C9C7CD; /* Light text */
+#text {
+    margin: 5px;
+    border: none;
+    color: #faf8d2;
+    outline: none;
 }
 
-/* --- Module Text and Background --- */
-
-/* Custom Notification */
-#custom-notification {
-  padding: 2px 4px;
-  color: #C9C7CD; /* Light text */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90% 20px;
+#entry {
+    all: unset;
+    padding-left: 35px;
+    padding-top: 35px;
 }
 
-/* Clock Module */
-#clock {
-  padding: 2px 4px;
-  color: #C9C7CD; /* Light text */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90% 20px;
-}
-#clock:hover {
-  color: #90B99F; /* Hover text color */
+#entry arrow {
+    border: none;
+    color: #faf8d2;
 }
 
-/* CPU Module */
-#cpu {
-  padding: 2px 4px;
-  color: #C9C7CD; /* Light text */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90% 20px;
-}
-#cpu:hover {
-  color: #90B99F; /* Hover text color */
+#entry:selected {
+    /* Additional styling for selected entry if needed */
 }
 
-/* Wireplumber Module */
-#wireplumber {
-  padding: 2px 4px;
-  color: #C9C7CD; /* Light text */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90% 20px;
-}
-#wireplumber:hover {
-  color: #90B99F; /* Hover text color */
+#entry:selected #text {
+    color: #e7cce2;
 }
 
-/* MPRIS Module */
-#mpris {
-  padding: 2px 4px;
-  color: #C9C7CD; /* Light text */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='20'><rect width='100%' height='20' rx='10' ry='10' fill='%23161617' stroke='%2390B99F' stroke-width='1'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90% 20px;
-}
-#mpris:hover {
-  color: #90B99F; /* Hover text color */
-}
-
-/* --- Workspace Buttons --- */
-#workspaces {
-  padding: 0 3px;
-}
-
-#workspaces button {
-  padding: 2px 4px;
-  margin-right: 0.5px;
-  color: #C9C7CD; /* Light text */
-  background: #161617; /* Dark background */
-  transition: all 0.2s ease;
-  border: none;
+#entry:drop(active) {
+    background-color: #faf8d2 !important;
 }
 
