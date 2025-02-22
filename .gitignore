@@ -32,3 +32,8 @@
 
 !fish/
 !fish/**
+
+!fastfetch/
+!fastfetch/**
+
+

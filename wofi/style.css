@@ -1,8 +1,8 @@
 @define-color background  #161617;
-@define-color mauve       #e7cce2;
-@define-color red         #e7cce2;
-@define-color lavender    #faf8d2;
-@define-color text        #faf8d2;
+@define-color mauve       #888fa7;
+@define-color red         #464e61;
+@define-color lavender    #acc0ba;
+@define-color text        #b8bfd3;
 
 * {
     all: unset;
@@ -17,8 +17,8 @@
 window {
     all: unset;
     padding: 20px;
-    border-radius: 0px; /* Square corners */
-    background-color: #161617; /* Solid background */
+    border-radius: 10px; /* Rounded corners (top and bottom are rounded) */
+    background-color: @background; /* Background with ~95% opacity */
 }
 
 #inner-box {
@@ -35,7 +35,7 @@ window {
     margin: 0px;
     padding: 30px;
     border: none;
-    background-color: #161617; /* Solid background */
+    background-color: @background; /* Background with ~95% opacity */
 }
 
 #input {
@@ -46,15 +46,15 @@ window {
     padding: 20px;
     border: none;
     outline: none;
-    color: #faf8d2;
+    color: @text;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
-    border-radius: 0px; /* Square corners */
-    background-color: #161617; /* Solid background */
+    border-radius: 10px; /* Rounded corners (top and bottom) */
+    background-color: @background; /* Background with ~95% opacity */
 }
 
 #input image {
     border: none;
-    color: #e7cce2;
+    color: @mauve;
     padding-right: 10px;
 }
 
@@ -66,13 +66,13 @@ window {
 #input:focus {
     outline: none;
     border: none;
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #text {
     margin: 5px;
     border: none;
-    color: #faf8d2;
+    color: @text;
     outline: none;
 }
 
@@ -84,7 +84,7 @@ window {
 
 #entry arrow {
     border: none;
-    color: #faf8d2;
+    color: @text;
 }
 
 #entry:selected {
@@ -92,10 +92,10 @@ window {
 }
 
 #entry:selected #text {
-    color: #e7cce2;
+    color: @mauve;
 }
 
 #entry:drop(active) {
-    background-color: #faf8d2 !important;
+    background-color: @lavender !important;
 }
 
